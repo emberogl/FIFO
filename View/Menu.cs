@@ -48,7 +48,7 @@
             Console.ReadKey();
             Console.ResetColor();
         }
-        // Gets the amount of order items to put in customer order from user input
+        /// Gets the amount of order items to put in customer order from user input
         public static string OrderAmountInput()
         {
             Console.Title = "Creating customer order...";
@@ -57,14 +57,14 @@
             string number = Console.ReadLine()!;
             return number;
         }
-        // Prompts every order item string from a for loop
+        /// Prompts every order item string from a for loop
         public static string RequestOrder(int i)
         {
             Console.Write($"Order {i + 1}: ");
             string item = Console.ReadLine()!;
             return item;
         }
-        // Outputs the first customer in queue to serve, and asks user if they want to serve them or not
+        /// Outputs the first customer in queue to serve, and asks user if they want to serve them or not
         public static string ServeRequest()
         {
             if (Model.Queue.Customers.Any())
@@ -103,7 +103,7 @@
             string maxValue = Console.ReadLine()!;
             return (min: minValue, max: maxValue);
         }
-        // Output single order
+        /// Output single order
         public static void OutputOrder(Model.Customer order)
         {
             Console.Title = "Min max";

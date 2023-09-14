@@ -20,7 +20,7 @@
             return string.Join(", ", _order);
         }
 
-        // For counting
+        /// For counting
         public List<string> GetListOrder()
         {
             return _order;

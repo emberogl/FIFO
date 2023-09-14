@@ -4,7 +4,7 @@
     {
         public void Start()
         {
-            // User select menu option
+            /// User select menu option
             string userSelection = View.Menu.GetUserSelection();
             switch (userSelection)
             {
@@ -35,7 +35,7 @@
             }
         }
         #region Menu Options
-        // Add a customer order by specifying how many things they order
+        /// Add a customer order by specifying how many things they order
         public void AddCustomer() 
         {
             string amount = View.Menu.OrderAmountInput(); // Gets amount of orders to add to list
@@ -57,7 +57,7 @@
                 Start(); 
             }
         }
-        // Gets the first order in queue to serve (dequeue)
+        /// Gets the first order in queue to serve (dequeue)
         public void ServeNextCustomer()
         {
             string choice = View.Menu.ServeRequest();
@@ -87,7 +87,7 @@
             View.Menu.ShowCustomerCount();
             Start();
         }
-        // Gets a range of orders based on how many order items the customer has in their list
+        /// Gets a range of orders based on how many order items the customer has in their list
         public void ShowMinMax()
         {
             (string min, string max) = View.Menu.GetMinMax();
@@ -114,7 +114,7 @@
                 Start();
             }
         }
-        // Gets order ID specified by user
+        /// Gets order ID specified by user
         public void FindCustomer()
         {
             string orderId = View.Menu.OrderIdToFind();
